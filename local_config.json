@@ -1,0 +1,43 @@
+{
+    "conditions": [
+      {
+        "name": "FSW Android",
+        "expression": "device.os == 'android' && device.country in ['us', 'uk']",
+        "tagColor": "GREEN"
+      }
+   
+    ],
+    
+    "version": {
+      "versionNumber": "6",
+      "updateTime": "2023-07-25T07:24:24.674391Z",
+      "updateUser": {
+        "email": "shivanivaikar@titan.co.in"
+      },
+      "updateOrigin": "CONSOLE",
+      "updateType": "INCREMENTAL_UPDATE"
+    },
+    "parameterGroups": {
+      "Medication": {
+        "parameters": {
+          "medication_config": {
+            "defaultValue": {
+              "value": "{\"max_denial_attempt\":30}"
+            },
+            "valueType": "JSON"
+          }
+        }
+      },
+      "NPS": {
+        "parameters": {
+          "survey_config": {
+            "defaultValue": {
+              "value": "{\"max_denial_attempt\":3,\"prompt_interval_in_hour\":4}"
+            },
+            "valueType": "JSON"
+          }
+        }
+      }
+    }
+  }
+  
